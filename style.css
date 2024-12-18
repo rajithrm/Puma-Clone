@@ -1,0 +1,1145 @@
+ head,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #9e8051;
+    width: 100%;
+}
+p{
+    font-family: system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+} 
+/* #spin{
+    color: #fff;
+    font-family:  system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size:15px;
+    
+} */
+#spin{
+    white-space:nowrap;
+}
+#spin:after{
+    content:'';
+    animation: spin 6s linear infinite;
+}
+@keyframes spin{
+    0%{
+        content:"EXTRA 5% DISCOUNT FOR ALL ONLINE PAYMENTS (Excluding FENTY x PUMA)";
+    }
+    50%{
+        content: "FREE DELIVERIES. FREE RETURNS."
+    }
+    /* 100%{
+
+        content: "EXTRA 5% DISCOUNT FOR ALL ONLINE PAYMENTS (Excluding FENTY x PUMA)";
+    } */
+    
+    
+}
+.intro{
+    display: flex;
+    height: 45px;
+    align-items: center;
+}
+
+nav{
+    background-color: black;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000 ;
+}
+.logo img{
+    height: 30px;
+    padding: 30px;
+    padding-right:px ;
+}
+.navleft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.list li a{
+    color: #fff; 
+    font-weight: bold;
+    font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 10px;
+    white-space: nowrap;
+}
+.list1 {
+    display: flex;
+}
+
+.navright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search i,p{
+    padding: 5px;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+    height: 40px;
+    width: 130px;
+    border-radius: 2px;
+    border: 0.1px solid;
+    border-color: #767575;
+    cursor: pointer;
+}
+.menubar{
+    display: none;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search img{
+    width: 20px;
+    padding: 5px;
+}
+.like,.cart,.user{
+    padding: 10px;
+    cursor: pointer;
+}
+.like{
+    padding-left: 20px;
+}
+.user{
+    padding-right: 50px;
+}
+
+/* body{
+    background-color: rgb(247, 164, 164);
+} */
+
+
+
+.list1 li a:hover{
+    color: rgb(222, 95, 95);
+    
+}
+
+
+.dropdown-new li:hover{
+    color: #9e8051;    
+}
+.new{
+    height: 20px;
+}
+.new:hover{
+    height: 100%;
+    width: 100%;
+}
+
+.new:hover .dropdown-new{
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+
+.dropdown-new li{
+   z-index: -1;
+    color: #878080;
+
+}
+
+.dropdown-new{
+    display: none;
+}
+
+
+.women:hover .dropdown-women{
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 10;
+
+}
+
+.dropdown-women{
+    display: none;
+}
+
+.dropdown-women li{
+    color: #878080;
+}
+
+.men:hover .dropdown-men{
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 10;
+    
+}
+
+.dropdown-men{
+    display: none;
+}
+.dropdown-men li{
+    color: #878080;
+    
+}
+
+.main img{
+    width: 100%;
+}
+
+.kids:hover .dropdown-women{
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.dropdown-men{
+    display: none;
+}
+.dropdown-men li{
+    color: #878080;
+}
+
+
+
+/* 1st image */
+
+.image1{
+    background-image: url(https://cdn.sanity.io/images/qa41whrn/staging/de21df85d1f52726d50cf59d5d2ab89015bfa5d6-2880x1040.jpg?w=2160&q=80&auto=format);
+    width: 100%;
+    height:530px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-img h1,h2,h3 {
+    width: fit-content;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    
+
+}
+.in-img h1{
+    font-weight: 700;
+    margin: 0;
+    font-size: 38px;
+
+}
+.in-img h2{
+    font-weight: lighter;
+    margin: 5px;
+    font-size: 23px;
+
+}
+.in-img h3{
+    font-weight: lighter;
+    font-size: medium;
+    margin: 5px;
+    
+}
+.in-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: fit-content; */
+    /* height: fit-content; */
+    align-items: center;
+    margin: 40px;
+}
+.but-img{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.but-img .a1,.a2,.a3{
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.but-img a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.image1{
+    display: flex;
+    justify-content: flex-end;
+}
+.but-img:hover{
+    cursor: pointer;
+}
+
+/* \\TRENDING CATEGORIES\\ */
+
+.trending{
+    display: flex;
+    justify-content: center;
+}
+
+.trending h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    cursor: pointer;
+}
+
+
+/* \\images with round shape\\ */
+
+
+.categ-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: scroll;
+}
+.sneakers ,.running,.winterwear,.motorsport,.t-shirt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* cursor: pointer; */
+   
+}
+
+.categ-img h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* \\border\\ */
+.div1, .div2,.div3,.div4,.div5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    border: 2px solid rgba(230, 99, 0, 0.6);
+    cursor: pointer;
+
+}
+
+.div1-1{
+    background-image: url(./image/sneakers-1701926552.jpeg);
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
+    background-size: cover;
+}
+.div2-1{
+    background-image: url(./image/run-1702012974.jpeg);
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
+    background-size: cover;
+}
+.div3-1{
+    background-image: url(./image/winterwear-1701926601.jpeg);
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
+    background-size: cover;
+}
+.div4-1{
+    background-image: url(./image/mts-1701926619.jpeg);
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
+    background-size: cover;
+    
+}
+.div5-1{
+    background-image: url(./image/tshirt-1701926734.jpeg);
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
+    background-size: cover;
+}
+
+/* \\2nd image of puma\\ */
+
+.puma2{
+    display: flex;
+    background-image: url(https://cdn.sanity.io/images/qa41whrn/staging/5c65107ae7b9effa38e60d2ba6674d9efe16ac86-2880x1040.jpg?w=2160&q=80&auto=format);
+    width: 100%;
+    height:530px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.in-img2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 40px;
+
+}
+.in-img2 h1,h3{
+    width: fit-content;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.but-img2{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.but-img2 a{
+    color: black;
+    margin: 10px;
+    font-weight: 500;
+}
+.in-img2 h1{
+    font-size: 38px;
+    font-weight: 700;
+}
+.in-img2 h3{
+    font-weight: lighter;
+    font-size: medium;
+    margin: 5px;
+}
+.trending h2{
+    color: black;
+}
+.trending{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 80px;
+}
+.shoes1{
+    display:flex;
+    overflow: scroll;
+    /* width: 1490px; */
+    max-width: 1490px;
+    width: 100%;
+   
+}
+.shoes1 div img{
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;    
+}
+
+.shoe-no {
+    font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* margin: 10px; */
+    margin-left: 10px;
+    padding-bottom: 30px;   
+}
+.rs{
+    font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    height: fit-content;
+    /* margin: 0; */
+}
+.red h5{
+    color: rgb(142, 58, 58);
+}
+.grey h5{
+    color: rgb(160, 160, 160);
+    /* margin-top: 0px; */
+    font-weight: lighter;
+    padding: 0;
+}
+.shoe-name{
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    cursor: pointer;
+    
+}
+.shoe-name h5{
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: medium;
+    cursor: pointer;
+}
+.shoe-no .off{
+    background-color: #bb0000;
+    position: relative;
+    width:55px;
+    height: 25px;
+    border-radius: 7%;
+    text-align: center;
+    top: 46px;
+    margin: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: small;
+}   
+
+.puma3{
+    background-image: url(./image/puma3.webp);
+    width: 100%;
+    height: 530px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.puma3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2;
+}
+.phatty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    margin: 40px;
+    
+}
+.phatty h1{
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.phatty h3{
+    color: black;
+    /* font-weight: 200; */
+    font-weight: inherit;
+    font-size: 24px;
+    line-height: 1.333;
+    margin-bottom: 10px;
+}
+.but-phatty a{
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 400;
+}
+.but-phatty{
+    margin-top: 10px;
+    background-color: #030303;
+    width: fit-content;
+    padding: 10px;
+}
+.puma4{
+    background-image: url(./image/puma4..jpg.webp);
+    width: 100%;
+    height: 530px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.img-kids{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+.img-kids h1{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+.img-kids h3{
+    font-weight: inherit;
+    font-size: 24px;
+    line-height: 1.333;
+    margin-bottom: 10px;
+}
+.but-kids{
+    background-color: #ffffff;
+    margin-top: 10px;
+    width: fit-content;
+    padding: 10px;
+    cursor: pointer;
+}
+.but-kids a{
+    color: black;
+    font-weight: 400;
+}
+.puma5{
+    background-image: url(./image/puma5.jpg);
+    width: 100%;
+    height: 530px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.img-shami{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+.img-shami h1{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.img-shami h3{
+    color: white;
+    font-weight: inherit;
+    font-size: 24px;
+    line-height: 1.333;
+    margin-bottom: 10px;
+}
+
+/* 6th image */
+
+.puma6{
+    background-image: url(./image/puma6.webp);
+    width: 100%;
+    height: 530px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+.palermo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    width: fit-content;
+}
+.palermo h1{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.palermo h3{
+    color: white;
+    font-weight: inherit;
+    font-size: 24px;
+    line-height: 1.333;
+    margin-top: 4px;
+}
+.palermo h5{
+    color: white;
+    font-size: 15px;
+    font-weight: inherit;
+    line-height: 1.333;
+    margin-top: 4px;
+}
+.but-palermo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    
+}
+.shop {
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+  
+}
+.explore1{
+    background-color: white;
+    padding: 10px; 
+    cursor: pointer;
+}
+.but-palermo a{
+    color: black;
+}
+
+/* 7 th image */
+
+.puma7{
+    background-image: url(./image/puma7.webp);
+    width: 100%;
+    height: 530px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    width: fit-content;
+}
+.child h1{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.child h3{
+    color: white;
+    font-weight: inherit;
+    font-size: 24px;
+    line-height: 1.333;
+    margin-top: 4px;
+}
+.button-main{
+    background-color: #ffffff;
+    margin-top: 20px;
+    width: fit-content;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.button-main a{
+    color: #030303;
+}
+
+
+/* writings under 7 th image */
+
+
+.fuel{
+    display: flex;
+    justify-content: center;
+}
+.fuel h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    width: fit-content;
+}
+.puma8{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3%;
+    width: 100%;
+    /* gap: 20px; */
+}
+
+/* .puma8-1 img{
+    width: 100%;
+
+} */
+/* .puma8-2 img{
+    width:100% ;
+    
+} */
+.puma8-1{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.puma8-2{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h2-p8{
+    color: black;
+    font-size: medium;
+    margin-bottom:0 ;
+    width: fit-content;
+}
+.h6-p8{
+    font-weight: 100;
+    margin: 5px;
+}
+.but-p8{
+    background-color: #030303;
+    padding: 8px;
+    margin-top: 8px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.but-p8 a{
+    color: #fff;
+
+}
+
+
+/* PUMA 9 TH image */
+
+
+.puma9{
+    background-image: url(./image/puma9.webp);
+    width: 100%;
+    height: 530px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.josh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    margin: 40px;
+}
+.josh h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.josh h3{
+    font-weight: inherit;
+    font-size: 20px;
+    line-height: 1.333;
+    margin-bottom: 0px;
+}
+
+
+
+/* puma10 video */
+
+
+
+.puma10{
+    display: flex;
+    align-items: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.puma10 video{
+    width: 100%;
+    height: auto;
+}
+.hills{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    padding: 5%;
+    
+}
+.hills h1{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.hills h3{
+    color: white;
+    font-weight: inherit;
+    font-size: 20px;
+    line-height: 1.333;
+    margin-bottom: 0px;
+}
+
+
+/* footer styling */
+
+footer{
+   
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    width: 100%;
+
+}
+footer p{
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.support h4{    
+    margin: 0;
+    padding-left: 45px;
+}
+
+/* 1 */
+
+.support{
+    width: 45%;
+}
+.li-1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: -20px;
+    padding-top: 0px;
+}
+.li-1 div{
+    width: 40%;
+    gap: 30px;
+}
+.li-1 p:hover{
+    color: #767575;
+}
+/* 2 */
+
+.about{
+    width: 25%;
+}
+.about h4{
+    margin: 0;
+
+}
+.about p:hover{
+    color: #767575;
+}
+.li-2 ul{
+    margin-top: 0;
+}
+.footicons{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.footicons1{
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+   
+}
+.footicons1 img:hover{
+    cursor: pointer;
+}
+
+.logopuma1 img{
+    height: 30px;
+    /* cursor: pointer;     */
+    
+}
+.logopuma1{
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 10%;
+    border-style: ridge;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.logopuma1 P{
+    padding: 0;
+    font-weight: 600;
+    font-size: 9px;
+    margin: -2px;
+    cursor: pointer;
+}
+.explore{
+    display: flex;
+    flex-direction: row;
+    background-color: #030303;
+    width: 15%;
+    justify-content: flex-start;
+    gap: 30px;
+    
+}
+
+.footmain{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footmain li{
+    padding: 2px;
+}
+.line{
+    height: 0.5px;
+    width: 90%;
+    background-color: #fff;
+    margin-left: 5%;
+}
+.visa{
+    background-color: #fff;
+    width: 30px;
+    padding: 2px 3px;
+    border-radius:5% ;
+    cursor: pointer;
+}
+
+.img1{
+    width: 100%;
+
+}
+.mastercard{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+    
+}
+.mastercard img{
+    width: 25px;
+    height: 18px;
+}
+
+
+/* footer2 */
+
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 75px 40px 75px;
+}
+
+.india img{
+   width: 35px;
+   padding-left:0 ;
+   padding-right: 10px;
+}
+.india{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1px solid white;
+    border-radius: 3%;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.india h2{
+    margin: 0;
+    font-size: large;
+}
+
+.ltd{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.ltd div{
+    font-size: 10px;
+}
+
+
+/* FOR MEDIA QUERIES */
+
+.footer{
+    display: none;
+}
+#navbar{
+    display: none;
+}
+#checkbox-menu{
+    display: none;
+}
+
+#image1{
+    display: none;
+}
+#puma2{
+    display: none;
+}
+#puma3{
+    display: none;
+}
+#puma4{
+    display: none;
+}
+#puma6{
+    display: none;
+}
+#puma7{
+    display: none;
+}
+#puma8{
+    display: none;
+}
+#puma9{
+    display: none;
+}
+#puma10{
+    display: none;
+}
+#but-img{
+    display: none;
+}
+#footer2{
+    display: none;
+}
+
+/* --------- */
+
+/* .footmain{
+
+} */
